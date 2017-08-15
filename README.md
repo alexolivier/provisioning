@@ -75,3 +75,17 @@ module "kubernetes" {
 ```
 
 After adding this to your plan, run `terraform get` to fetch the module.
+
+
+## Upgrade
+```
+sudo apt-get update
+sudo apt-get upgrade
+sudo reboot
+```
+If they don't connect again
+```
+ip link delete wg0
+wg-quick wg0
+wg
+```
